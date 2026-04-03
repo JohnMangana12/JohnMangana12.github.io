@@ -11,6 +11,9 @@
     .hero { min-height: 60vh; display: flex; align-items: center; }
     .card-project { background: #161b22; border: 1px solid #30363d; transition: transform 0.2s; }
     .card-project:hover { transform: translateY(-4px); border-color: #58a6ff; }
+    .screenshot-gallery img { border-radius: 8px; border: 1px solid #30363d; cursor: pointer; transition: transform 0.2s; }
+    .screenshot-gallery img:hover { transform: scale(1.02); border-color: #58a6ff; }
+    .screenshot-caption { color: #8b949e; font-size: 0.85rem; margin-top: 0.5rem; }
     .badge-tech { background: #21262d; color: #8b949e; border: 1px solid #30363d; }
     a { color: #58a6ff; }
     a:hover { color: #79c0ff; }
@@ -104,6 +107,27 @@
           <li>User management with bcrypt auth and email password reset</li>
           <li>18+ RESTful API endpoints</li>
         </ul>
+        <h6 class="mt-4">Screenshots:</h6>
+        <div class="screenshot-gallery row g-3 mb-3">
+          <div class="col-md-4">
+            <a href="images/iams-login.png" target="_blank">
+              <img src="images/iams-login.png" alt="IAMS Login Page" class="img-fluid">
+            </a>
+            <p class="screenshot-caption text-center">Login Page</p>
+          </div>
+          <div class="col-md-4">
+            <a href="images/iams-dashboard.png" target="_blank">
+              <img src="images/iams-dashboard.png" alt="IAMS Dashboard" class="img-fluid">
+            </a>
+            <p class="screenshot-caption text-center">Dashboard</p>
+          </div>
+          <div class="col-md-4">
+            <a href="images/iams-asset-list.png" target="_blank">
+              <img src="images/iams-asset-list.png" alt="IAMS Asset List" class="img-fluid">
+            </a>
+            <p class="screenshot-caption text-center">Asset List with CRUD</p>
+          </div>
+        </div>
         <div class="d-flex gap-2">
           <a href="https://github.com/JohnMangana12/IAMS-Angular" class="btn btn-primary">
             <i class="bi bi-github"></i> View on GitHub
